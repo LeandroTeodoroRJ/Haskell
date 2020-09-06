@@ -1,0 +1,58 @@
+** LIST COMPREHENSION **
+
+A idéia do list comprehension pode ser interpretada 
+como uma notação matemática, observe:
+S = {2*x|x E N}
+Assim, o conjunto de elementos de S é formado pelos
+números naturais multiplicados por 2.
+Agora veja em Haskell exemplos semelhantes.
+
+** Exemplo
+Prelude> [x*2|x <- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+Observe que o operador <- indica que cada elemento
+da lista é adicionado ao valor de x.
+
+** Adicionando um filtro, indica somente os valores
+em que x*2 será maior que 10
+Prelude> [x*2|x <- [1..10], x*2>10]
+[12,14,16,18,20]
+
+** Agora pegando da lista somente os elementos 
+maiores que 8. Observe a diferença.
+Prelude> [x*2|x <- [1..10], x>8]
+[18,20]
+
+** É possível usar o list comprehension dentro de
+uma função. Veja o exemplo anterior declarado
+como uma função.
+Prelude> func xs = [x*2|x <- xs, x>8]
+Prelude> func [1..10]
+[18,20]
+Aqui a variável xs é uma lista que é passada como
+argumento quando a função é invocada.
+
+** Incluindo filtros múltiplos
+Prelude> [x| x <- [1..10], x>2, x<8]
+[3,4,5,6,7]
+Note que há dois filtros sepados por ','
+É possivel adicionarmos mais filtros.
+
+** Passando 2 listas
+Prelude> ans = [ x*y | x <- [2,5,10], y <- [8,10,11]]
+Prelude> ans
+[16,20,22,40,50,55,80,100,110]
+Prelude> lenght' xs = sum [1| _<-xs]
+Prelude> lenght' ans
+9
+OBS: 
+1- Veja que o compilador executa uma operação distributiva 
+por isso temos 9 elementos na lita resposta.
+2- Foi usado lenght'(com apóstrofo) para diferenciar de uma
+função build in.
+3- O símbolo '_' foi usado já que a lista não retornará
+seus valores para nenhuma variável interna.
+
+
+
+

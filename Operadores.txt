@@ -1,0 +1,36 @@
+** OPERADORES DA LINGUEGEM HASKELL **
+
+Assim como em outras linguagens os parênteses () são utilizados
+para indicar precedência. Indicando para o compilador qual ope-
+ração ele irá realizar primeiro.
+
+Operadores Boleanos:
+&&		AND
+||		OR
+not		Negação(Inversão)
+
+
+Operadores Lógicos
+==		Igualdade
+/=		Diferente de
+>		Maior que
+<		Menor que
+>=		Maior igual
+<=		Menor igual
+
+
+Exemplos:
+ghci> 5 + 4.0
+9.0
+ghci> 
+ghci> 4 == 3
+False
+ghci> 4 /= 3
+True
+ghci> (5 + 2)/2 == 4/2 + 3/2
+True
+ghci> (3 - 1 == 2) && (5 + 3 == 8)
+True
+ghci> (3 -1 == 2) || ('a' == 'b')
+True
+

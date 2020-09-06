@@ -1,0 +1,32 @@
+INSTALAÇÃO NO LINUX
+
+INSTALAÇÃO DO STACK
+No shell digite:
+$curl -sSL https://get.haskellstack.org/ | sh
+
+Para checar a instalação digite:
+$stack ghci
+O programa irá baixar os pacotes mais atuais, após algum tempo
+o prompt 'Prelude>' irá aparecer.
+
+Agora já podemos executar as funções do Haskell.
+Exemplos de operações básicas no GHCI
+prelude> 2 + 15  
+17  
+prelude> 49 * 100  
+4900  
+prelude> 1892 - 1472  
+420  
+prelude> 5 / 2  
+2.5  
+
+** Alguns comandos do compilador GHCI
+:q	(Sai do GHCI)
+:l <nome do arquivo> (Carrega o arquivo fonte)
+	OBS: Todos os arquivos Haskell devem ter a primeira letra
+	maiúscula.
+:r	(Reload - recarrega e recompila o último arquivo aberto)
+:?	(Ajuda)
+:set prompt "nome> "	(Para mudar o nome do prompt do ghci)
+:! clear		(Limpa a Tela - Linux)
+

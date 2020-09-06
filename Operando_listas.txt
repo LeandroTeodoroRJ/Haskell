@@ -1,0 +1,130 @@
+** LISTAS NO HASKELL **
+
+Uma lista pode agrupar muitos elementos, no Haskell as listas
+são homogêneas, ou seja, um conjunto de elementos de um mesmo
+tipo.
+
+**Criando uma lista
+Prelude> lostNumbers = [4,8,15,16,23,42]
+Prelude> lostNumbers
+[4,8,15,16,23,42]
+
+
+**Como foi dito o Haskell não aceita lista de elementos diferentes
+Prelude> lista = [1,2,3,'a','b','c']
+
+<interactive>:4:10: error:
+    • No instance for (Num Char) arising from the literal ‘1’
+    • In the expression: 1
+      In the expression: [1, 2, 3, 'a', ....]
+      In an equation for ‘lista’: lista = [1, 2, 3, ....]
+
+**Adicionando um elemento no final da lista
+Observe  o operador de concatenação
+Prelude> lista = [4,5,6]
+Prelude> lista
+[4,5,6]
+Prelude> lista2 = lista ++ [7]
+Prelude> lista2
+[4,5,6,7]
+ 
+**Adicionando um elemento no começo da lista
+Prelude> lista = [4,5,6]
+Prelude> lista
+[4,5,6]
+Prelude> lista4 = 3:lista
+Prelude> lista4
+[3,4,5,6]
+
+**Juntando 2 listas (concatenação)
+Prelude> lista6 = lista4 ++ lista
+Prelude> lista6
+[3,4,5,6,4,5,6]
+Prelude> 
+
+**Obtendo um determinado elemento de uma lista pelo index
+Prelude> lista
+[4,5,6]
+Prelude> lista !! 0
+4
+Prelude> lista !! 1
+5
+OBS: 
+1) A lista começa no index Zero.
+2) Strings também são tradadas como listas, porém de caracteres.
+Prelude> str = "HASKELL"
+Prelude> str !! 3
+'K'
+
+**Retorna os X primeiros elementos de uma lista
+Prelude> lista4
+[3,4,5,6]
+Prelude> take 2 lista4
+[3,4]
+OBS: A função drop é semelhante, porém pega os X elementos do final.
+
+**Checa para saber se o elemento pertence a lista
+Prelude> lista
+[4,5,6]
+Prelude> 4 `elem` lista
+True
+Prelude> 7 `elem` lista
+False
+OBS: Note que o sinal é o de CRASE.
+
+**Listas também podem conter listas
+Prelude> listaDeLista = [[1,2,3],[4,5,6],[7,8,9]]
+Prelude> listaDeLista
+[[1,2,3],[4,5,6],[7,8,9]]
+OBS: Cada lista interna é considerado um elemento da lista maior.
+
+
+**Obtendo o primeiro elemento de uma lista
+Prelude> head [1,2,3]
+1
+
+**Retornando o último elemento de uma lista
+Prelude> last ['a','b','c']
+'c'
+
+**Outras funções do mesmo tipo
+init - Retorna todos os elementos menos o último
+tail - Retorna todos os elementos menos o primeiro
+null - Retorna True se for uma lista vazia
+reverse - Retorna a lista de trás para frente
+maximum - Retorna o maior elemento da lista
+minimum - Retorna o menor elemento da lista
+sum - Retorna a soma dos elementos
+product - Retorna o produto dos elementos da lista
+
+
+**Retornando o tamanho de uma lista
+Prelude> length [4,5,6]
+3
+
+**SEQUÊNCIAS
+**Criando uma lista de 1 a 10
+Prelude> [1..10]
+[1,2,3,4,5,6,7,8,9,10]
+
+**Uma lista de char(string)
+Prelude> ['a'..'f']
+"abcdef"
+
+**Lembra muito o selecionar e arrastar do excel
+Prelude> [2,4..10]
+[2,4,6,8,10]
+De trás para frente
+Prelude> [50,40..0]
+[50,40,30,20,10,0]
+
+**Listas de elementos repetidos
+Prelude> take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+
+**Conjunto de elementos repedidos na lista
+Prelude> take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+OBS: Note que o 10 é o tamanho máximo da lista e não 
+quantas vezes o ciclo irá se repetir.
+

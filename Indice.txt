@@ -1,0 +1,16 @@
+LINGUAGEM HASKELL
+
+** Sugestão de Guia de Leitura: **
+Instalação.txt
+Primeira_funcao.hs
+Operadores.txt
+Operando_listas.txt
+Funcoes_BuildIn.txt
+Criando_funcoes.hs
+Condicionais.hs
+List_comprehension.txt
+
+
+** Referências **
+Livro: Learn You a Haskell for Great Good!
+http://learnyouahaskell.com/chapters
