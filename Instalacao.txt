@@ -3,6 +3,8 @@ INSTALAÇÃO NO LINUX
 INSTALAÇÃO DO STACK
 No shell digite:
 $curl -sSL https://get.haskellstack.org/ | sh
+ou..
+$wget -qO- https://get.haskellstack.org/ | sh
 
 Para checar a instalação digite:
 $stack ghci
