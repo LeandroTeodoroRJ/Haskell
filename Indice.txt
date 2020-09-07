@@ -7,6 +7,7 @@ Operadores.txt
 Operando_listas.txt
 Funcoes_BuildIn.txt
 Criando_funcoes.hs
+Pattern_matching.hs
 Condicionais.hs
 List_comprehension.txt
 Tuplas.txt
