@@ -1,0 +1,41 @@
+** TUPLAS **
+
+Tuplas também são arranjos de dados, porém uma lista
+somente aceita um tipo(uma lista é homogênia).
+Entretanto uma tupla pode aceitar diversos tipos de
+dados. As tuplas são declaradas entre parênteses.
+Observe:
+
+
+Prelude> [1,'a']
+
+<interactive>:3:2: error:
+    • No instance for (Num Char) arising from the literal ‘1’
+    • In the expression: 1
+      In the expression: [1, 'a']
+      In an equation for ‘it’: it = [1, 'a']
+Prelude> (1,'a')
+(1,'a')
+Prelude> ("Haskell", 20)
+("Haskell",20)
+
+** Funções de Tuplas
+** fst - Retorna o primeiro valor de uma tupla
+Prelude> fst ("Haskell", 20)
+"Haskell"
+
+** Outras funções semelhantes:
+snd - Retorna o segundo elemento da tupla
+
+** zip - combina elementos de uma lista formando pares
+Prelude> zip [1,2,3] ["Um","Dois","Tres"]
+[(1,"Um"),(2,"Dois"),(3,"Tres")]
+
+** Exemplo utilizando Tuplas:
+Quais dos triângulos odem ser retângulos?
+Prelude> [(a,b,c)| a <- [1..10], b <- [1..10], c <- [1..10], a^2+b^2 == c^2]
+[(3,4,5),(4,3,5),(6,8,10),(8,6,10)]
+
+
+
+
