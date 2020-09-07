@@ -9,6 +9,7 @@ Funcoes_BuildIn.txt
 Criando_funcoes.hs
 Condicionais.hs
 List_comprehension.txt
+Tuplas.txt
 
 
 ** Referências **
