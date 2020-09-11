@@ -35,6 +35,10 @@ Prelude> lista
 Prelude> lista4 = 3:lista
 Prelude> lista4
 [3,4,5,6]
+Também é possível adicionar na sequência
+Prelude> 1:2:3:[]
+[1,2,3]
+
 
 **Juntando 2 listas (concatenação)
 Prelude> lista6 = lista4 ++ lista
