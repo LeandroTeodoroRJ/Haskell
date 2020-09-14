@@ -11,7 +11,7 @@ Pattern_matching.hs
 Condicionais.hs
 List_comprehension.txt
 Tuplas.txt
-
+Recursividade.hs
 
 ** Referências **
 Livro: Learn You a Haskell for Great Good!
