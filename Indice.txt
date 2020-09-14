@@ -1,7 +1,8 @@
 LINGUAGEM HASKELL
 
-** Sugestão de Guia de Leitura: **
+** Sugestão de Guia para Leitura: **
 Instalação.txt
+Funcoes_BuilIn.txt
 Primeira_funcao.hs
 Operadores.txt
 Operando_listas.txt
