@@ -1,0 +1,60 @@
+** ALGUMAS FUNÇÕES BÁSICAS DO HASKELL **
+
+Na maiorida das linguagens imperativas as funções são
+invocadas com o nome e passando os argumentos através
+de parênteses, e seus argumentos separados por virgu-
+la. No Haskell não é utilizado parênteses para esse
+fim, os argumentos da funçao veem depois do nome da
+mesma separados por espaço. Os argumentos da função
+também são sepados um do outro por um espaço.
+
+** Exemplo de Funções **
+
+MOD - Resto da divisão
+Prelude> mod 3 2
+1
+Prelude> mod 6 2
+0
+Prelude> 6 `mod` 2
+0
+Note que também é possivel passar o nome da função deslocada
+no centro, utilizando o caractere de acento grave `
+
+SUCC - Incrementa um inteiro ao número
+ghci> succ 9.1
+10.1
+
+SHOW - Converte de algum formato para string
+ghci> show 3  
+"3"  
+ghci> show 5.334  
+"5.334"  
+ghci> show True  
+"True"  
+
+READ - Converte de string para outro formato
+ghci> read "5" :: Int  
+5  
+ghci> read "5" :: Float  
+5.0  
+ghci> (read "5" :: Float) * 4  
+20.0  
+ghci> read "[1,2,3,4]" :: [Int]  
+[1,2,3,4]  
+ghci> read "(3, 'a')" :: (Int, Char)  
+(3, 'a')  
+
+** Cast de Inteiro para outro tipo
+ghci> 20 :: Int  
+20  
+ghci> 20 :: Integer  
+20  
+ghci> 20 :: Float  
+20.0  
+ghci> 20 :: Double  
+20.0  
+
+
+
+
+
