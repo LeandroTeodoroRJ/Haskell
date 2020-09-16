@@ -106,6 +106,12 @@ product - Retorna o produto dos elementos da lista
 Prelude> length [4,5,6]
 3
 
+** Combinando 2 Listas, as listas podem ser de natureza diferentes
+zip :: [a] -> [b] -> [(a,b)]
+Prelude> zip [1,2,3] [4,5,6]
+[(1,4),(2,5),(3,6)]
+
+
 **SEQUÊNCIAS
 **Criando uma lista de 1 a 10
 Prelude> [1..10]
