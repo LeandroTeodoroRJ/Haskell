@@ -10,6 +10,10 @@ também são sepados um do outro por um espaço.
 
 ** Exemplo de Funções **
 
+DIV - Retorna a parte inteira da divisão
+Prelude> div 3 2 
+1
+
 MOD - Resto da divisão
 Prelude> mod 3 2
 1
@@ -54,6 +58,35 @@ ghci> 20 :: Float
 ghci> 20 :: Double  
 20.0  
 
+ABS - Retorna o valor absoluto(módulo)
+Prelude> abs (-20)
+20
+
+EXP - Realiza a potência com base em neperiano
+Prelude> exp 2
+7.38905609893065
+
+LOG - Logarítmo na base neperiana
+Prelude> log 10
+2.302585092994046
+
+*** Outras Funções do Tipo ***
+SQRT - Retorna a raiz quadrada
+FLOOR - Arredonda para baixo
+CEILING - Arredonda para cima
+ROUND - Arredonda para o lado mais próximo (cima ou baixo)
+
+*** Biblioteca Data.Char ***
+Prelude> import Data.Char
+Prelude Data.Char> 
+
+ORD - Retorna o inteiro correspondente ao valor ASCII do char
+Prelude Data.Char> ord 'F'
+70
+
+CHR - Retorna o char equivalente ao inteiro da tabela ASCII
+Prelude Data.Char> chr 70
+'F'
 
 
 
