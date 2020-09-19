@@ -40,5 +40,5 @@ media2 trab prova
   | otherwise = "Voce foi aprovado"
   where med = (trab + prova)/2
         notaCorte = 6     --Deixe alinhado assim para evitar erros de compilação
-
+-- Where também pode ser usado em outras funções que não tenham guardas.
 
