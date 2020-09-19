@@ -31,4 +31,5 @@ prelude> 5 / 2
 :?	(Ajuda)
 :set prompt "nome> "	(Para mudar o nome do prompt do ghci)
 :! clear		(Limpa a Tela - Linux)
+:t <nome da função>	(Retorna os tipos utilizados na função)
 
