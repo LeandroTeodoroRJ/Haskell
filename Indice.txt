@@ -2,6 +2,7 @@ LINGUAGEM HASKELL
 
 ** Sugestão de Guia para Leitura: **
 Instalação.txt
+HelloHaskell.hs
 Funcoes_BuilIn.txt
 Primeira_funcao.hs
 Operadores.txt
