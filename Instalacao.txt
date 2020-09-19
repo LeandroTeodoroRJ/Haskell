@@ -21,6 +21,16 @@ prelude> 1892 - 1472
 420  
 prelude> 5 / 2  
 2.5  
+** OBS: Digitando "it" no prompt retorna a última resposta.
+Prelude> 2+2
+4
+Prelude> it
+4
+Prelude> show 3
+"3"
+Prelude> it
+"3"
+
 
 ** Alguns comandos do compilador GHCI
 :q	(Sai do GHCI)
